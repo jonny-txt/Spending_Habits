@@ -1,7 +1,7 @@
 from flask import render_template, redirect, request, flash, session
 from app import app
 from app.models.expense import Expense
-from app.config.mysqlconnection import connectToMySQL  # Added import
+from app.config.mysqlconnection import connectToMySQL
 
 def login_check():
     if 'user_id' not in session:
